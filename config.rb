@@ -70,3 +70,8 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :bitballoon do |bitballoon|
+  bitballoon.token = ENV["7e8c250e99a40ed38766e7b423dd8db1a3e0bcac82ed9b79772688bcce6e79a6"]
+  bitballoon.site  = "vcmiddleman.bitballoon.com"
+end
